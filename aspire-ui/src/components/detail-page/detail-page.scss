@@ -1,0 +1,7 @@
+@import '../../variable.scss';
+.detail-page{
+    display: grid;
+    grid-template-columns: 340px auto;
+    height: 100vh;
+    width: 100vw;
+}

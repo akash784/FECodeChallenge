@@ -1,0 +1,64 @@
+@import '../../../variable.scss';
+
+.link-section{
+    background-color: #0C365A;
+    height: 770px;
+    padding: 48px 40px;
+    .link-section__description{
+        color: grey;
+        margin-top: 19px;
+        font-size: 15px;
+        margin-bottom: 80px;
+    }
+    .link-section__link {
+        margin-bottom: 60px;
+        a{
+            color: $color-white;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+        }
+        .active {
+            color: $color-green;
+        }
+    }
+}
+
+// these are classes for images used in this component
+.card{
+    background-image: url('../../../assets/aspire_logos/Card.png');
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.home{
+    background-image: url('../../../assets/aspire_logos/Home.png');
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.payment{
+    background-image: url('../../../assets/aspire_logos/Payments.png');
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.credit{
+    background-image: url('../../../assets/aspire_logos/Credit.png');
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.setting{
+    background-image: url('../../../assets/aspire_logos/Account.png');
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}

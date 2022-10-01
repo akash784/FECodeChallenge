@@ -1,0 +1,56 @@
+@import '../../../../variable.scss';
+
+.card-content__head{
+    .card-head__title{
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .card-head__info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .card-info__amount{
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            align-items: center;
+            .card-amount__logo{
+                height: 24px;
+                width: 40px;
+                background-color: $color-green;
+                color: $color-white;
+                border-radius: 4px;
+            }
+            .card-amount__figure{
+                font-size: 26px;
+                font-weight: $font-weight-bold;
+            }
+        }
+        .card-info__action{
+            font-size: 13px;
+            justify-self: flex-end;
+            a {
+                width: 100px;
+                font-size: 16px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                gap: 8px;
+                padding: 10px 12px;
+                font-weight: $font-weight-bold;
+                color: $color-white;
+                background-color: $color-action;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+// static image class used in this component
+.add{
+    background-image: url('../../../../assets/aspire_logos/add.png');
+    height: 16px;
+    width: 16px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
