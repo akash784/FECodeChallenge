@@ -2,4 +2,27 @@
 
 .card-content{
     padding: 60px;
+    .card-content__nav {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        margin-bottom: 16px;
+        a {
+            font-size: 14px;
+            color: #AAAAAA;
+            line-height: 24px;
+        }
+        .active{
+            cursor: pointer;
+            background-color: $color-white;
+            font-weight: $font-weight-bold;
+            color: #222222;
+            border-bottom: 2px solid #23CEFD;
+        }
+    }
+    .card-nav__content {
+        box-shadow: 0 2px 12px #00000014;
+        border-radius: 4px;
+        padding: 40px;
+    }
 }

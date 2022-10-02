@@ -1,0 +1,25 @@
+@import '../../../../variable.scss';
+
+.nav-content {
+    .nav-content__title {
+        display: flex;
+        color: $color-green;
+        gap: 6px;
+        justify-content: center;
+        .nav-title__description {
+            font-size: 12px;
+        }
+    }
+    .nav-content__details{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.showCardNumber {
+    background-image: url('../../../../assets/aspire_logos/remove_red_eye-24px.png');
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
