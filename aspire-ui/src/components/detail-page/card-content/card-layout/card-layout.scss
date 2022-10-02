@@ -26,6 +26,7 @@
         display: flex;
         flex-direction: row;
         gap: 27px;
+        margin-bottom: 13px;
         .number-group {
             display: flex;
             flex-direction: row;
@@ -42,4 +43,29 @@
             }
         }
     }
+    .card-layout__cardInfo {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        align-items: center;
+        gap: 36px;
+        color: $color-white;
+        .card-cardInfo__cvv {
+            display: flex;
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+    .card-layout__merchant {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.merchant {
+    background-image: url('../../../../assets/aspire_logos/Visa-Logo.png');
+    width: 67px;
+    height: 23px;
+    background-repeat: no-repeat;
 }

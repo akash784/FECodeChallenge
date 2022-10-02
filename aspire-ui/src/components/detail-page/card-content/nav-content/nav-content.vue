@@ -8,7 +8,7 @@
         </div>
         <div class="nav-content__details">
             <manageCard />
-            <div></div>
+            <cardSummary />
         </div>
     </div>
 </template>

@@ -1,0 +1,40 @@
+@import '../../variable.scss';
+
+.accordian-container{
+    margin-bottom: 24px;
+    .accordian-header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        background-color: #F5F9FF;
+        border-radius: 8px;
+        padding: 24px;
+        .accordian-header__title {
+            display: flex;
+            gap: 12px;
+            font-size: 14px;
+            color: #0C365A;
+        }
+        a {
+            cursor: pointer;
+            height: 20px;
+            width: 20px;
+            background-repeat: no-repeat;
+            color: black;
+            background-size: cover;
+            justify-self: flex-end;
+        }
+        .accordian-header__open{
+            background-image: url('../../assets/aspire_logos/down-arrow.png');
+        }
+        .accordian-header__close{
+            background-image: url('../../assets/aspire_logos/down-arrow-1.png');
+        }
+    }
+    .accordian-open {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .accordian-body {
+        padding: 24px;
+    }
+}

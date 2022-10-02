@@ -6,6 +6,7 @@
         color: $color-green;
         gap: 6px;
         justify-content: center;
+        margin-bottom: 12px;
         .nav-title__description {
             font-size: 12px;
         }
@@ -13,6 +14,7 @@
     .nav-content__details{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 46px;
     }
 }
 

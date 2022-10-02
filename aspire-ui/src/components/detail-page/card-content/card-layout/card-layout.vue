@@ -11,8 +11,19 @@
                 <span v-for="i in 4" :key="i"></span>
             </span>
             <span class="number-group">
-                {{lastFourDigit}}
+                <b>{{lastFourDigit}}</b>
             </span>
+        </div>
+        <div class="card-layout__cardInfo">
+            <div class="card-cardInfo__expiry">
+                <b>Thru: {{card.expiryDate}}</b>
+            </div>
+            <div class="card-cardInfo__cvv">
+                <b>CVV: * * *</b>  
+            </div>
+        </div>
+        <div class="card-layout__merchant">
+            <div class="merchant"></div>
         </div>
     </div>
 </template>

@@ -1,0 +1,16 @@
+@import '../../../../variable.scss';
+
+.card-summary {
+    .recent-transactions {
+        background-image: url('../../../../assets/aspire_logos/Group-11889-1.png');
+        height: 24px;
+        width: 24px;
+        background-repeat: no-repeat;
+    }
+    .card-details {
+        background-image: url('../../../../assets/aspire_logos/Group-11889.png');
+        height: 24px;
+        width: 24px;
+        background-repeat: no-repeat;
+    }
+}

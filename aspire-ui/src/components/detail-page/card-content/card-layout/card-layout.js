@@ -11,7 +11,7 @@ export default {
     },
     computed: {
         lastFourDigit() {
-            return  this.card.cardNumber.slice(-4);
+            return  this.card.cardNumber.slice(-4).split('').join(' ');
         }
     }
 }

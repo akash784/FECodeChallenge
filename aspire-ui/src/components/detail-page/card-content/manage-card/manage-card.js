@@ -1,9 +1,11 @@
 import cardLayout from "../card-layout/card-layout.vue";
+import cardActions from "../card-actions/card-actions.vue";
 
 export default {
     name: 'manageCard',
     components: {
-        cardLayout
+        cardLayout,
+        cardActions
     },
     data() {
         return {
