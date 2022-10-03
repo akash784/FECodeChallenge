@@ -1,6 +1,6 @@
 import cardContentHead from "./card-content-head/card-content-head.vue";
 import navContent from "./nav-content/nav-content.vue";
-import { mapActions } from "vuex";
+import { mapActions, mapMutations } from "vuex";
 
 export default {
     name: 'cardContent',
@@ -22,9 +22,17 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['getCardList'])
+        ...mapActions(['getCardList']),
+        ...mapMutations(['setCardList'])
     },
     mounted() {
-        this.getCardList()
+        var list = JSON.parse(window.localStorage.getItem('cardList') || '[]');
+        if(!list.length){
+            this.getCardList().then(res => {
+                window.localStorage.setItem('cardList', JSON.stringify(res));
+            });
+        } else {
+            this.setCardList(list);
+        }
     }
 }

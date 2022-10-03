@@ -2,7 +2,7 @@
     <div class="card-actions">
         <div class="card-actions__list">
             <div v-for="(action, i) in actionList" :key="i">
-                <a class="card-action__link">
+                <a class="card-action__link" @click="itemAction(action.value)">
                     <div :class="action.class"></div>
                     <div class="text-center">{{action.text}}</div>
                 </a>

@@ -4,20 +4,45 @@ export default {
         return {
             actionList: [{
                 text: 'Freeze card',
-                class: 'freeze'
+                class: 'freeze',
+                value: 'freeze'
             },{
                 text: 'Set spend limit',
-                class: 'spend-limit'
+                class: 'spend-limit',
+                value: 'spendLimit'
             },{
                 text: 'Add to GPay',
-                class: 'gpay'
+                class: 'gpay',
+                value: 'gpay'
             },{
                 text: 'Replace card',
-                class: 'replace-card'
+                class: 'replace-card',
+                value: 'replaceCard'
             },{
                 text: 'Cancel card',
-                class: 'cancel-card'
+                class: 'cancel-card',
+                value: 'cancelCard'
             }]
+        }
+    },
+    methods: {
+        itemAction(val){
+            switch (val) {
+                case 'freeze':
+                    break;
+                case 'spendLimit':
+                    break;
+                case 'gpay':
+                    break;
+                case 'replaceCard':
+                    break;
+                case 'cancelCard':
+                    this.cancelCard();
+                    break;
+            }
+        },
+        cancelCard(){
+
         }
     }
 }
