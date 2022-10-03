@@ -4,6 +4,11 @@
     background-color: #EDF3FF;
     border-radius: 16px;
     padding: 20px 31px;
+    @media screen and (max-width: $screen-sm) {
+        border-radius: 24px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
     .card-actions__list {
         display: flex;
         flex-direction: row;

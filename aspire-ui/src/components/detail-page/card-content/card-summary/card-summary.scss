@@ -1,6 +1,10 @@
 @import '../../../../variable.scss';
 
 .card-summary {
+    @media screen and (max-width: $screen-sm) {
+        padding: 24px;
+        background-color: $color-white;
+    }
     .recent-transactions {
         background-image: url('../../../../assets/aspire_logos/Group-11889-1.png');
         height: 24px;
