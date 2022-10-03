@@ -11,7 +11,8 @@ export default {
                 name: 'Matt Daemon',
                 cardNumber: '9423528891233921',
                 expiryDate: '17/20',
-                cvv: '321'
+                cvv: '321',
+                isFrozen: false
             })
             window.localStorage.setItem('cardList', JSON.stringify(listOfCards))
             this.setCardList(listOfCards);

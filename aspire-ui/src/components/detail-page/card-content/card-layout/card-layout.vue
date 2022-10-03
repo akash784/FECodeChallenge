@@ -1,5 +1,5 @@
 <template>
-    <div class="card-layout">
+    <div class="card-layout" :class="{'card-layout-frozen': card.isFrozen}">
         <div class="card-layout__logo">
             <div class="logo"></div>
         </div>

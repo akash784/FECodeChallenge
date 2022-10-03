@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="manage-card__actions">
-            <cardActions />
+            <cardActions :currentCard="currentCard" />
         </div>
     </div>
 </template>

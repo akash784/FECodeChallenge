@@ -9,7 +9,10 @@ export default {
         cardActions
     },
     computed: {
-        ...mapState(['cardList'])
+        ...mapState(['cardList']),
+        currentCard() {
+            return this.cardList[this.selectedIndex];
+        }
     },
     data() {
         return {
