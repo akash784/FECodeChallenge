@@ -2,6 +2,9 @@
 
 .card-content__head{
     margin-bottom: 34px;
+    @media screen and (max-width: $screen-sm) {
+        padding: 31px 24px 0;
+    }
     .card-head__title{
         font-size: 14px;
         margin-bottom: 16px;
@@ -42,6 +45,14 @@
                 color: $color-white;
                 background-color: $color-action;
                 border-radius: 4px;
+                @media screen and (max-width: $screen-sm) {
+                    font-size: 13px;
+                    color: #23CEFD;
+                    background-color: transparent;
+                    padding: 0;
+                    width: fit-content;
+                    align-items: center;
+                }
             }
         }
     }
@@ -54,17 +65,7 @@
     width: 16px;
     background-size: cover;
     background-repeat:no-repeat ;
-}
-
-@media screen and (max-width: $screen-sm) {
-    .card-info__action{
-        a {
-            font-size: 13px;
-            color: #23CEFD !important;
-            background-color: transparent !important;
-        }
-    }
-    .add {
+    @media screen and (max-width: $screen-sm) {
         background-image: url('../../../../assets/aspire_logos/mobile_images/add.png');
     }
 }

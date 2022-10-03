@@ -1,33 +1,37 @@
 @import '../../../../variable.scss';
-
-.card-carousel {
-    width: 414px;
-    overflow: hidden;
-    margin-bottom: 32px;
-    .card-carousel__slider{
-        width: 100%;
-        height:auto;
-        display: flex;
-        flex-wrap: nowrap;
-        margin-bottom: 16px;
+.manage-card{
+    @media screen and (max-width: $screen-sm) {
+        background-color: #0C365A;
     }
-    .card-carousel__selector{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 8px;
-        a {
-            cursor: pointer;
-            height: 8px;
-            width: 8px;
-            background-color: $color-green;
-            border-radius: 50%;
-            opacity: 0.2;
+    .card-carousel {
+        width: 414px;
+        overflow: hidden;
+        margin-bottom: 32px;
+        .card-carousel__slider{
+            width: 100%;
+            height:auto;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 16px;
         }
-        .active {
-            width: 16px;
-            border-radius: 8px;
-            opacity: 1;
+        .card-carousel__selector{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 8px;
+            a {
+                cursor: pointer;
+                height: 8px;
+                width: 8px;
+                background-color: $color-green;
+                border-radius: 50%;
+                opacity: 0.2;
+            }
+            .active {
+                width: 16px;
+                border-radius: 8px;
+                opacity: 1;
+            }
         }
     }
 }

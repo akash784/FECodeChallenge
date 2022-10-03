@@ -1,6 +1,6 @@
 <template>
     <div class="mobile-content">
-        <cardContentHead />
+        <cardContent />
     </div>
 </template>
 
