@@ -1,0 +1,63 @@
+@import '../../../variable.scss';
+
+.mobile-footer {
+    box-shadow: 0 -3px 6px #00000014;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    .mobile-footer__links {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        a{  
+            color: #DDDDDD;
+            font-size: 9px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            span {
+                font-size: 9px;
+            }
+        }
+        .active {
+            color: $color-green;
+        }
+    }
+}
+
+.card{
+    background-image: url('../../../assets/aspire_logos/mobile_images/pay.png');
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.home{
+    background-image: url('../../../assets/aspire_logos/mobile_images/Logo-1.png');
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.payment{
+    background-image: url('../../../assets/aspire_logos/mobile_images/Payments.png');
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.credit{
+    background-image: url('../../../assets/aspire_logos/mobile_images/Credit.png');
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.setting{
+    background-image: url('../../../assets/aspire_logos/mobile_images/Account.png');
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}

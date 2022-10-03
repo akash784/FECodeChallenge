@@ -1,0 +1,18 @@
+@import '../../../variable.scss';
+
+.mobile-header{
+    background-color: #0C365A;
+    .mobile-header__logo {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        .logo{
+            float: right;
+            background-image: url('../../../assets/aspire_logos/mobile_images/Logo.png');
+            color: $color-green;
+            height: 25px;
+            width: 25px;
+            background-repeat: no-repeat;
+        }
+    }
+}

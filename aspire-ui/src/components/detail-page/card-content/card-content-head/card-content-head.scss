@@ -55,3 +55,16 @@
     background-size: cover;
     background-repeat:no-repeat ;
 }
+
+@media screen and (max-width: $screen-sm) {
+    .card-info__action{
+        a {
+            font-size: 13px;
+            color: #23CEFD !important;
+            background-color: transparent !important;
+        }
+    }
+    .add {
+        background-image: url('../../../../assets/aspire_logos/mobile_images/add.png');
+    }
+}

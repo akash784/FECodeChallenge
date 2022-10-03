@@ -1,11 +1,18 @@
 <template>
     <div class="detail-page">
-        <section class="detail-page__section">
-            <linkSection />
-        </section>
-        <section class="detail-page__aside">
-            <cardContent />
-        </section>
+        <div class="detail-page__desktop">
+            <section class="detail-page__section">
+                <linkSection />
+            </section>
+            <section class="detail-page__aside">
+                <cardContent />
+            </section>
+        </div>
+        <div class="detail-page__mobile">
+            <mobileHeader />
+            <mobileContent />
+            <mobileFooter />
+        </div>
     </div>
 </template>
 

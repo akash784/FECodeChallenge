@@ -9,6 +9,10 @@ $color-green: #01D167;
 $color-white: #ffffff;
 $color-action: #325BAF;
 
+// screen resolutions
+$screen-sm: 640px;
+$screen-sm-max: $screen-sm + 1;
+
 // common useful classes
 .text-center {
     text-align: center;
