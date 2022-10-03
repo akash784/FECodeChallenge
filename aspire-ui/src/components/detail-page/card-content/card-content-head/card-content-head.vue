@@ -9,7 +9,7 @@
                     <b class="card-amount__figure">3,000</b>
                 </div>
                 <div class="card-info__action">
-                    <a>
+                    <a href="javascript:;" @click="addCard">
                         <span class="add"></span>
                         New Card
                     </a>

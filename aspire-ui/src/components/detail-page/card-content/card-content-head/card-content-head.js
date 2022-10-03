@@ -1,3 +1,7 @@
 export default {
-    name: 'cardContentHead'
+    name: 'cardContentHead',
+    methods: {
+        addCard() {
+        }
+    }
 }

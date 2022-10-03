@@ -1,6 +1,7 @@
 @import '../../../../variable.scss';
 
 .card-layout{
+    color: $color-white;
     height: 195px;
     width: 360px;
     background-color: $color-green;
@@ -22,7 +23,7 @@
     }
     .card-layout__name{
         font-size: 24px;
-        color: $color-white;
+        
         margin-bottom: 27px;
     }
     .card-layout__cardNumber {
@@ -33,7 +34,6 @@
         .number-group {
             display: flex;
             flex-direction: row;
-            color: $color-white;
             gap: 7px;
             align-items: center;
             font-size: 14px;
@@ -52,7 +52,6 @@
         font-size: 13px;
         align-items: center;
         gap: 36px;
-        color: $color-white;
         .card-cardInfo__cvv {
             display: flex;
             span {

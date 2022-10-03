@@ -1,5 +1,6 @@
 import cardContentHead from "./card-content-head/card-content-head.vue";
 import navContent from "./nav-content/nav-content.vue";
+import { mapActions } from "vuex";
 
 export default {
     name: 'cardContent',
@@ -19,5 +20,11 @@ export default {
                 isActive: false
             }]
         }
+    },
+    methods: {
+        ...mapActions(['getCardList'])
+    },
+    mounted() {
+        this.getCardList()
     }
 }
