@@ -13,6 +13,7 @@
             <mobileContent />
             <mobileFooter />
         </div>
+        <dialogCenter />
     </div>
 </template>
 

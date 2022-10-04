@@ -1,0 +1,67 @@
+@import '../../variable.scss';
+
+.dialog-center {
+    .dialog-center__mask {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 1000;
+
+        .dialog-center__body {
+            min-height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 350px;
+            background-color: $color-white;
+            z-index: 2000;
+            box-shadow: 0 2px 6px #00000014;
+            border-radius: 8px;
+            padding: 24px;
+            .add-card-form {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                input {
+                    line-height: 24px;
+                    border-radius: 4px;
+                    border: 1px solid #00000014;
+                    box-shadow: 0 2px 6px #00000014;
+                }
+
+                button {
+                    background-color: $color-action;
+                    color: $color-white;
+                    border: none;
+                    border-radius: 6px;
+                    line-height: 24px;
+                }
+                .close {
+                    background-color: red;
+                    margin-left: 8px;
+                }
+                .error {
+                    font-size: 12px;
+                    color: red;
+                    font-weight: $font-weight-bold;
+                }
+            }
+
+            .dialog-center__actions {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                margin: 0 auto;
+                justify-content: center;
+            }
+        }
+    }
+}

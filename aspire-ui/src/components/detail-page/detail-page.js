@@ -3,6 +3,7 @@ import cardContent from './card-content/card-content.vue';
 import mobileHeader from './mobille-header/mobile-header.vue';
 import mobileFooter from './mobile-footer/mobile-footer.vue';
 import mobileContent from './mobile-content/mobile-content.vue';
+import dialogCenter from '../dialog-center/dialog-center.vue';
 
 export default {
     name: 'detailPage',
@@ -11,6 +12,7 @@ export default {
         cardContent,
         mobileHeader,
         mobileFooter,
-        mobileContent
+        mobileContent,
+        dialogCenter
     }
 }
