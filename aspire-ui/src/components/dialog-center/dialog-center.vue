@@ -14,7 +14,7 @@
                             <button type="submit"> Submit</button>
                             <button class="close" @click="closeDialog">Close</button>
                         </div>
-                        <span v-if="showError" class="error"> Please fill all the fields</span>
+                        <span v-if="showError" class="error">{{this.errMsg}}</span>
                     </form>
                 </div>
                 <div v-else>

@@ -10,7 +10,8 @@ export default {
             cardName: '',
             isConfirm: false,
             showError: false,
-            currentCard: {}
+            currentCard: {},
+            errMsg: ''
         }
     },
     mounted() {
@@ -24,7 +25,6 @@ export default {
         openDialog(opt) {
             this.showDialog = true;
             this.showError = false;
-            console.log(opt)
             if(opt.name === 'addcard') {
                 this.isConfirm = false
             } else {
@@ -51,9 +51,15 @@ export default {
         },
         addNewCard(event) {
             if(this.cardNumber.length === 16 && this.cardName && this.cardCVV.length === 3) {
-                this.addCard();
+                if(isNaN(this.cardNumber) || isNaN(this.cardCVV)){
+                    this.showError = true;
+                    this.errMsg = 'Please enter numbers in Card Number and CVV field';
+                } else {
+                    this.addCard();
+                }
             } else {
                 this.showError = true;
+                this.errMsg = 'Please fill all the fields';
             }
             event.preventDefault();
         },
