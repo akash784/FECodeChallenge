@@ -9,7 +9,8 @@ export default {
             cardCVV: '',
             cardName: '',
             isConfirm: false,
-            showError: false
+            showError: false,
+            currentCard: {}
         }
     },
     mounted() {
@@ -23,10 +24,12 @@ export default {
         openDialog(opt) {
             this.showDialog = true;
             this.showError = false;
+            console.log(opt)
             if(opt.name === 'addcard') {
                 this.isConfirm = false
             } else {
                 this.isConfirm = true;
+                this.currentCard = opt.currentCard;
             }
         },
         closeDialog() {
@@ -41,9 +44,8 @@ export default {
                 expiryDate: '18/25',
                 cvv: this.cardCVV,
                 isFrozen: false
-            })
-            console.log(listOfCards)
-            window.localStorage.setItem('cardList', JSON.stringify(listOfCards))
+            });
+            window.localStorage.setItem('cardList', JSON.stringify(listOfCards));
             this.setCardList(listOfCards);
             this.showDialog = false;
         },
@@ -53,8 +55,14 @@ export default {
             } else {
                 this.showError = true;
             }
-            console.log(this.cardNumber.length, this.cardName, this.cardCVV.length)
             event.preventDefault();
+        },
+        cancelCard(){
+            var list = JSON.parse(window.localStorage.getItem('cardList'));
+            var newList = list.filter( v=> {  return v.id !== this.currentCard.id});
+            window.localStorage.setItem('cardList',JSON.stringify(newList));
+            this.setCardList(newList);
+            this.showDialog = false;
         }
     }
 }

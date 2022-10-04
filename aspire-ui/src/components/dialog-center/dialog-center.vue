@@ -18,9 +18,15 @@
                     </form>
                 </div>
                 <div v-else>
-
+                    <b>
+                        <h2>Are you sure?</h2>
+                    </b>
+                    <div>
+                        <button class="yes" @click="cancelCard"> Yes</button>
+                        <button class="close" @click="closeDialog">Close</button>
+                    </div>
                 </div>
-                
+
             </div>
         </div>
     </div>

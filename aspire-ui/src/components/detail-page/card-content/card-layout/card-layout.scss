@@ -8,7 +8,7 @@
     border-radius: 8px;
     padding: 27px;
     @media screen and (max-width: $screen-sm) {
-        width: 313px;
+        max-width: 313px;
     }
     .card-layout__logo {
         display: flex;

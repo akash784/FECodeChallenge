@@ -2,6 +2,7 @@ import { mapMutations } from "vuex";
 
 export default {
     name: 'cardActions',
+    inject: ['eventBus'],
     props: {
         currentCard: {
             type: Object,
@@ -65,10 +66,10 @@ export default {
             }
         },
         cancelCard(){
-            var list = JSON.parse(window.localStorage.getItem('cardList'));
-            var newList = list.filter( v=> {  return v.id !== this.currentCard.id});
-            window.localStorage.setItem('cardList',JSON.stringify(newList));
-            this.setCardList(newList);
+            this.eventBus.$emit('eventbus-open-dialog', {
+                name: 'cancelcard',
+                currentCard: this.currentCard
+            })
         },
         freezeCard() {
             var list = JSON.parse(window.localStorage.getItem('cardList'));

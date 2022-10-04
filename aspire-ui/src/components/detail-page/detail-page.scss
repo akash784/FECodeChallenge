@@ -2,6 +2,7 @@
 .detail-page{
     height: 100vh;
     width: 100vw;
+    overflow-y: scroll;
     @media screen and (max-width: $screen-sm) {
         .detail-page__desktop {
            display: none;
