@@ -1,0 +1,108 @@
+@import '../../../../variable.scss';
+
+.card-details__transaction {
+    padding: 24px;
+    .card-transaction__item {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 8px;
+
+        .card-transaction__info {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+
+            .transaction-info__content {
+                display: flex;
+                gap: 12px;
+
+                .transaction-info__logo {
+                    display: flex;
+                    height: 48px;
+                    justify-content: center;
+                    width: 48px;
+                    background-color: #009DFF1A;
+                    align-items: center;
+                    border-radius: 50%;
+                }
+
+                .transaction-info__detail {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    b {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+
+                    span {
+                        font-size: 13px;
+                        color: #AAAAAA
+                    }
+                }
+            }
+
+            .transaction-info__amount {
+                font-size: 14px;
+                justify-self: flex-end;
+
+                .credit {
+                    color: $color-green;
+                }
+            }
+        }
+
+        .card-transaction__type {
+            display: flex;
+            gap: 4px;
+
+            .transaction-type__text {
+                color: #325BAF;
+                font-size: 12px;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
+    .view-more-transactions {
+        background-color: #DDFFEC;
+        display: flex;
+        padding: 16px;
+        border-bottom-left-radius: 8px ;
+        border-bottom-right-radius: 8px;
+        justify-content: center;
+        a{
+            cursor: pointer;
+            font-size: 12px;
+            color: $color-green;
+        }
+    }
+}
+
+.file {
+    background-image: url('../../../../assets/aspire_logos/file-storage.png');
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+}
+
+.flights {
+    background-image: url('../../../../assets/aspire_logos/flights.png');
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+}
+
+.megaphone {
+    background-image: url('../../../../assets/aspire_logos/megaphone.png');
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+}
+
+.business-and-finance {
+    background-image: url('../../../../assets/aspire_logos/business-and-finance-1@2x.png');
+    height: 10px;
+    width: 12px;
+    color: #325BAF;
+    background-repeat: no-repeat;
+}

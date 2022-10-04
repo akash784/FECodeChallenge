@@ -12,14 +12,7 @@
                 <span>Recent transactions</span>
             </template>
             <template v-slot:default>
-                <div class="card-details__transaction">
-                    <div> Sections</div>
-                    <div> Sections</div>
-                    <div> Sections</div>
-                    <div> Sections</div>
-                    <div> Sections</div>
-                    <div> Sections</div>
-                </div>
+                <cardTransactions />
             </template>
         </accordianCollapsible>
     </div>
